@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         exit();
     }
 
-    $upload->hashName();
+    // $upload->hashName();
 
     if (!$upload->checkSize()) {
         http_response_code(400);
