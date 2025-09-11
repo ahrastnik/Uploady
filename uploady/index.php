@@ -118,7 +118,7 @@ include_once APP_PATH . 'logic/indexLogic.php';
       paramName: "file",
       maxFilesize: parseFloat(document.getElementById('max_file_size').value),
       maxFiles: 100,
-      acceptedFiles: ".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.txt,.zip,.rar",
+      acceptedFiles: ".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.txt,.zip,.rar,.mp4",
       dictDefaultMessage: `<i class="fas fa-cloud-upload-alt fa-3x mb-3"></i><br>${<?= json_encode($lang["general"]['dropzone_message'] ?? 'Drop files here or click to upload'); ?>}`,
       init: function() {
         this.on("addedfile", function(file) {
